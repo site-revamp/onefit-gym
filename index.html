@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+
+  <title>OneFit Dubai | Premium Gym, Fitness Classes & Recovery in JVT</title>
+  <meta name="description" content="Discover OneFit Gym in Jumeirah Village Triangle, Dubai. Explore strength training, Pilates, HIIT, boxing, yoga, kids classes and recovery. Claim your 3-day free pass.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.onefit.ae/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OneFit Dubai | Train. Recover. Belong.">
+  <meta property="og:description" content="A premium fitness community in JVT, Dubai. Explore training, classes, recovery and family fitness.">
+  <meta property="og:url" content="https://www.onefit.ae/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=85">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #161D42;
+      --color-primary-dark: #10152F;
+      --color-primary-light: #29345F;
+
+      --color-secondary: #1F1F1F;
+      --color-secondary-dark: #171717;
+      --color-secondary-light: #303030;
+
+      --color-accent: #ACD037;
+      --color-heading: #FFFFFF;
+      --color-text: #D9D9D9;
+      --color-text-muted: #A4A4A4;
+
+      --color-background: #111111;
+      --color-background-alt: #161616;
+      --color-surface: #1F1F1F;
+      --color-surface-alt: #262626;
+
+      --color-border: rgba(255,255,255,.13);
+      --color-border-strong: rgba(255,255,255,.25);
+
+      --color-interactive: #ACD037;
+      --color-interactive-hover: #C0E64D;
+      --color-focus: #D7F77A;
+
+      --font-heading: "Space Grotesk", sans-serif;
+      --font-body: "Inter", sans-serif;
+
+      --container: 1300px;
+      --section-space: clamp(76px, 9vw, 125px);
+      --radius: 22px;
+      --ease: cubic-bezier(.2,.75,.25,1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-space);
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-accent);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 27px;
+      height: 2px;
+      background: var(--color-accent);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--color-heading);
+      font-family: var(--font-heading);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+    }
+
+    h1 {
+      font-size: clamp(46px, 7vw, 88px);
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: clamp(36px, 5vw, 62px);
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: clamp(23px, 2.4vw, 30px);
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--color-text);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .section-intro {
+      max-width: 690px;
+      margin-bottom: 48px;
+    }
+
+    .section-intro h2 {
+      margin: 17px 0;
+    }
+
+    .section-intro p {
+      max-width: 610px;
+      color: var(--color-text-muted);
+    }
+
+    .accent {
+      color: var(--color-accent);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      min-height: 56px;
+      padding: 14px 24px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      background: var(--color-accent);
+      color: #111111;
+      font-size: 16px;
+      font-weight: 800;
+      transition: transform .25s var(--ease), background .25s ease, border-color .25s ease;
+    }
+
+    .btn:hover {
+      background: var(--color-interactive-hover);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      color: #FFFFFF;
+      background: transparent;
+      border-color: rgba(255,255,255,.45);
+    }
+
+    .btn-outline:hover {
+      color: #111111;
+      background: #FFFFFF;
+      border-color: #FFFFFF;
+    }
+
+    .btn-arrow {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    /* Navigation */
+
+    .site-header {
+      position: absolute;
+      z-index: 100;
+      inset: 0 0 auto;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: -.07em;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      background: var(--color-accent);
+      color: #111111;
+      font-size: 20px;
+      font-weight: 800;
+      border-radius: 10px 10px 10px 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 2.4vw, 34px);
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,.86);
+      font-size: 15px;
+      font-weight: 600;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .btn {
+      min-height: 46px;
+      padding: 11px 19px;
+      font-size: 14px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--color-border-strong);
+      border-radius: 50%;
+      color: #FFFFFF;
+      background: rgba(255,255,255,.08);
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      margin: 5px auto;
+      background: #FFFFFF;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 790px;
+      min-height: min(900px, 100svh);
+      display: flex;
+      align-items: center;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background: #111111;
+    }
+
+    .hero-image {
+      position: absolute;
+      z-index: -3;
+      inset: 0;
+    }
+
+    .hero-image img {
+      object-position: center 42%;
+      filter: saturate(.72);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(10,10,10,.96) 0%, rgba(10,10,10,.84) 42%, rgba(10,10,10,.30) 100%),
+        linear-gradient(0deg, rgba(10,10,10,.75), transparent 42%);
+    }
+
+    .hero::after {
+      content: "ONE";
+      position: absolute;
+      z-index: -1;
+      right: -3vw;
+      bottom: -9vw;
+      color: rgba(255,255,255,.045);
+      font-family: var(--font-heading);
+      font-size: clamp(230px, 36vw, 540px);
+      font-weight: 700;
+      line-height: .8;
+      letter-spacing: -.1em;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      width: min(780px, 100%);
+      padding-top: 110px;
+      padding-bottom: 80px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 26px;
+      padding: 9px 14px;
+      border: 1px solid rgba(172,208,55,.45);
+      border-radius: 999px;
+      background: rgba(22,29,66,.62);
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .hero-kicker i {
+      width: 8px;
+      height: 8px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 16px var(--color-accent);
+    }
+
+    .hero h1 {
+      max-width: 820px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: var(--color-accent);
+    }
+
+    .hero-copy {
+      max-width: 590px;
+      margin-bottom: 34px;
+      color: rgba(255,255,255,.82);
+      font-size: clamp(17px, 1.6vw, 19px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 44px;
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 32px;
+      color: rgba(255,255,255,.8);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .hero-proof span {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .proof-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+
+    /* Brand statement */
+
+    .statement {
+      background: var(--color-primary);
+      overflow: hidden;
+    }
+
+    .statement-inner {
+      display: grid;
+      grid-template-columns: 1fr .75fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .statement h2 {
+      max-width: 790px;
+      margin: 0;
+      font-size: clamp(38px, 5.7vw, 72px);
+    }
+
+    .statement h2 span {
+      color: var(--color-accent);
+    }
+
+    .statement-aside {
+      padding-left: 28px;
+      border-left: 1px solid rgba(255,255,255,.28);
+    }
+
+    .statement-aside p {
+      color: rgba(255,255,255,.78);
+    }
+
+    .statement-aside a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      color: var(--color-accent);
+      font-weight: 800;
+    }
+
+    /* Experience categories */
+
+    .experiences {
+      background: var(--color-background);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 34px 22px;
+    }
+
+    .experience {
+      min-height: 230px;
+      padding: 28px 24px 24px;
+      border-top: 1px solid var(--color-border-strong);
+      transition: border-color .25s ease, transform .25s var(--ease);
+    }
+
+    .experience:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-5px);
+    }
+
+    .experience-number {
+      display: block;
+      margin-bottom: 20px;
+      color: var(--color-accent);
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+
+    .experience h3 {
+      margin-bottom: 12px;
+    }
+
+    .experience p {
+      margin-bottom: 0;
+      color: var(--color-text-muted);
+      font-size: 16px;
+    }
+
+    .experience a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 17px;
+      color: var(--color-accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    /* Six custom SVG icons - exactly two rows of three */
+
+    .icon-section {
+      background: var(--color-secondary);
+      overflow: hidden;
+    }
+
+    .icon-section::before {
+      content: "MOVE";
+      position: absolute;
+      top: 45px;
+      right: -15px;
+      color: rgba(255,255,255,.025);
+      font-family: var(--font-heading);
+      font-size: clamp(130px, 25vw, 330px);
+      font-weight: 700;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .icon-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0 28px;
+    }
+
+    .icon-item {
+      min-height: 245px;
+      padding: 30px 18px 30px 0;
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .icon-art {
+      display: grid;
+      place-items: center;
+      width: 66px;
+      height: 66px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(172,208,55,.5);
+      border-radius: 19px 19px 19px 5px;
+      background: rgba(172,208,55,.08);
+      color: var(--color-accent);
+    }
+
+    .icon-art svg {
+      width: 34px;
+      height: 34px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-item h3 {
+      margin-bottom: 9px;
+      font-size: 22px;
+    }
+
+    .icon-item p {
+      max-width: 330px;
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 16px;
+    }
+
+    /* Feature image section */
+
+    .feature {
+      background: var(--color-background-alt);
+    }
+
+    .feature-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(35px, 7vw, 90px);
+      align-items: center;
+    }
+
+    .feature-visual {
+      min-height: 580px;
+      position: relative;
+    }
+
+    .feature-photo {
+      position: absolute;
+      inset: 0 12% 8% 0;
+      overflow: hidden;
+      border-radius: 2px 110px 2px 2px;
+    }
+
+    .feature-photo img {
+      object-position: center;
+    }
+
+    .feature-stamp {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: grid;
+      place-items: center;
+      width: 190px;
+      height: 190px;
+      padding: 20px;
+      border: 10px solid var(--color-background-alt);
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: #111111;
+      text-align: center;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.15;
+      transform: rotate(7deg);
+    }
+
+    .feature-copy h2 {
+      margin: 18px 0 22px;
+    }
+
+    .feature-copy > p {
+      color: var(--color-text-muted);
+    }
+
+    .feature-points {
+      display: grid;
+      gap: 17px;
+      margin: 30px 0 34px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      color: #FFFFFF;
+      font-size: 16px;
+    }
+
+    .check {
+      flex: 0 0 23px;
+      display: grid;
+      place-items: center;
+      width: 23px;
+      height: 23px;
+      margin-top: 1px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: #111111;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    /* Membership */
+
+    .membership {
+      background: var(--color-primary);
+      overflow: hidden;
+    }
+
+    .membership::after {
+      content: "JOIN";
+      position: absolute;
+      right: -25px;
+      bottom: -75px;
+      color: rgba(255,255,255,.035);
+      font-family: var(--font-heading);
+      font-size: clamp(160px, 28vw, 380px);
+      font-weight: 700;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .membership-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 35px;
+      margin-bottom: 48px;
+    }
+
+    .membership-head .section-intro {
+      margin-bottom: 0;
+    }
+
+    .membership-head p {
+      max-width: 610px;
+    }
+
+    .membership-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .price-card {
+      position: relative;
+      padding: 32px 27px;
+      background: #FFFFFF;
+      color: #171717;
+      border-radius: 3px 30px 3px 3px;
+    }
+
+    .price-card.featured {
+      background: var(--color-accent);
+      transform: translateY(-12px);
+    }
+
+    .price-label {
+      display: inline-block;
+      margin-bottom: 23px;
+      color: #555555;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .price-card.featured .price-label {
+      color: #29320F;
+    }
+
+    .price-card h3 {
+      min-height: 58px;
+      margin-bottom: 13px;
+      color: #111111;
+      font-size: 25px;
+    }
+
+    .price {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 20px;
+      color: #111111;
+      font-family: var(--font-heading);
+      font-size: 43px;
+      font-weight: 700;
+      letter-spacing: -.06em;
+    }
+
+    .price small {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .price-card p {
+      min-height: 54px;
+      color: #555555;
+      font-size: 15px;
+    }
+
+    .price-card .btn {
+      width: 100%;
+      min-height: 51px;
+      margin-top: 8px;
+      background: #111111;
+      color: #FFFFFF;
+      font-size: 15px;
+    }
+
+    .price-card .btn:hover {
+      background: var(--color-primary);
+    }
+
+    .price-note {
+      position: relative;
+      z-index: 1;
+      margin-top: 30px;
+      color: rgba(255,255,255,.76);
+      font-size: 15px;
+    }
+
+    .price-note a {
+      color: var(--color-accent);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* Trial invitation */
+
+    .trial {
+      position: relative;
+      overflow: hidden;
+      background: var(--color-background);
+    }
+
+    .trial-panel {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      min-height: 440px;
+      overflow: hidden;
+      background: var(--color-secondary);
+    }
+
+    .trial-copy {
+      position: relative;
+      z-index: 2;
+      padding: clamp(35px, 6vw, 75px);
+    }
+
+    .trial-copy h2 {
+      max-width: 650px;
+      margin: 17px 0 20px;
+    }
+
+    .trial-copy p {
+      max-width: 570px;
+      color: var(--color-text-muted);
+    }
+
+    .trial-visual {
+      position: relative;
+      min-height: 350px;
+      overflow: hidden;
+    }
+
+    .trial-visual img {
+      position: absolute;
+      inset: 0;
+      object-position: center;
+    }
+
+    .trial-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, var(--color-secondary), transparent 65%);
+    }
+
+    /* Reviews and trust */
+
+    .community {
+      background: #F2F2EC;
+      color: #171717;
+    }
+
+    .community h2 {
+      color: #171717;
+    }
+
+    .community .eyebrow {
+      color: var(--color-primary);
+    }
+
+    .community .eyebrow::before {
+      background: var(--color-primary);
+    }
+
+    .community-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .rating-block {
+      padding: 38px;
+      background: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .rating-number {
+      color: var(--color-accent);
+      font-family: var(--font-heading);
+      font-size: clamp(75px, 10vw, 120px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -.08em;
+    }
+
+    .rating-stars {
+      margin: 12px 0;
+      color: var(--color-accent);
+      font-size: 25px;
+      letter-spacing: .1em;
+    }
+
+    .rating-block p {
+      margin: 0;
+      color: rgba(255,255,255,.8);
+      font-size: 15px;
+    }
+
+    .review-quotes {
+      display: grid;
+      gap: 0;
+    }
+
+    .review-quote {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,.18);
+    }
+
+    .review-quote:first-child {
+      padding-top: 0;
+    }
+
+    .review-quote p {
+      margin-bottom: 10px;
+      color: #252525;
+      font-size: 17px;
+    }
+
+    .review-quote strong {
+      color: #111111;
+      font-size: 15px;
+    }
+
+    .review-note {
+      margin-top: 22px;
+      color: #5E5E5E;
+      font-size: 14px;
+    }
+
+    /* Location */
+
+    .location {
+      background: var(--color-background-alt);
+    }
+
+    .location-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: stretch;
+    }
+
+    .location-copy {
+      padding-block: 15px;
+    }
+
+    .location-copy h2 {
+      margin: 17px 0 23px;
+    }
+
+    .location-detail {
+      display: flex;
+      gap: 15px;
+      padding: 20px 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .location-detail strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #FFFFFF;
+      font-size: 16px;
+    }
+
+    .location-detail span {
+      color: var(--color-text-muted);
+      font-size: 16px;
+    }
+
+    .location-map {
+      min-height: 430px;
+      overflow: hidden;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+    }
+
+    .location-map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 430px;
+      border: 0;
+      filter: grayscale(1) contrast(.9);
+    }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 70px 0 110px;
+      background: #090909;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 55px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .footer-brand p {
+      max-width: 370px;
+      margin-top: 20px;
+      color: var(--color-text-muted);
+      font-size: 16px;
+    }
+
+    .footer-col h3 {
+      margin-bottom: 20px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: var(--color-text-muted);
+      font-size: 16px;
+      transition: color .2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-accent);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 25px;
+      color: #888888;
+      font-size: 14px;
+    }
+
+    .footer-bottom a {
+      color: #BBBBBB;
+    }
+
+    /* Mobile sticky conversion bar */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* Motion */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Tablet */
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+      }
+
+      .nav-actions .btn {
+        padding-inline: 14px;
+      }
+
+      .statement-inner,
+      .community-layout {
+        gap: 40px;
+      }
+
+      .feature-layout {
+        gap: 40px;
+      }
+
+      .feature-visual {
+        min-height: 500px;
+      }
+
+      .membership-head {
+        display: block;
+      }
+
+      .membership-head .btn {
+        margin-top: 15px;
+      }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 16px;
+        padding-bottom: calc(78px + env(safe-area-inset-bottom));
+      }
+
+      .container {
+        width: calc(100% - 30px);
+      }
+
+      .section {
+        padding-block: 70px;
+      }
+
+      .site-header {
+        padding: 14px 0;
+      }
+
+      .brand {
+        font-size: 26px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions > .btn {
+        display: none;
+      }
+
+      .nav-links {
+        position: fixed;
+        inset: 0;
+        z-index: 150;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 0;
+        padding: 90px 35px;
+        background: rgba(17,17,17,.98);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        transition: opacity .25s ease, visibility .25s ease, transform .25s ease;
+      }
+
+      .nav-links.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .nav-links a {
+        padding: 17px 0;
+        border-bottom: 1px solid var(--color-border);
+        font-family: var(--font-heading);
+        font-size: 24px;
+      }
+
+      .menu-toggle {
+        position: relative;
+        z-index: 200;
+      }
+
+      .hero {
+        min-height: 760px;
+        min-height: 94svh;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(90deg, rgba(10,10,10,.88), rgba(10,10,10,.52)),
+          linear-gradient(0deg, rgba(10,10,10,.82), transparent 70%);
+      }
+
+      .hero-image img {
+        object-position: 58% center;
+      }
+
+      .hero-content {
+        padding-top: 125px;
+        padding-bottom: 55px;
+      }
+
+      .hero h1 {
+        font-size: clamp(44px, 12vw, 60px);
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+        max-width: 330px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-proof {
+        display: grid;
+        gap: 11px;
+      }
+
+      .statement-inner,
+      .feature-layout,
+      .community-layout,
+      .location-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .statement-aside {
+        padding-left: 20px;
+      }
+
+      .experience-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .experience {
+        min-height: 245px;
+        padding: 22px 12px 20px 0;
+      }
+
+      .experience h3 {
+        font-size: 21px;
+      }
+
+      .experience p {
+        font-size: 16px;
+      }
+
+      .icon-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 18px;
+      }
+
+      .icon-item {
+        min-height: 240px;
+        padding-right: 5px;
+      }
+
+      .icon-item h3 {
+        font-size: 20px;
+      }
+
+      .feature-visual {
+        min-height: 430px;
+      }
+
+      .feature-photo {
+        inset: 0 8% 7% 0;
+        border-radius: 2px 75px 2px 2px;
+      }
+
+      .feature-stamp {
+        width: 145px;
+        height: 145px;
+        font-size: 16px;
+        border-width: 7px;
+      }
+
+      .membership-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+
+      .price-card h3,
+      .price-card p {
+        min-height: 0;
+      }
+
+      .trial-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .trial-copy {
+        padding: 38px 25px;
+      }
+
+      .trial-visual {
+        min-height: 260px;
+      }
+
+      .trial-visual::after {
+        background: linear-gradient(0deg, var(--color-secondary), transparent 65%);
+      }
+
+      .rating-block {
+        padding: 30px;
+      }
+
+      .location-map,
+      .location-map iframe {
+        min-height: 330px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .site-footer {
+        padding-bottom: 35px;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 300;
+        inset: auto 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(9,9,9,.96);
+        border-top: 1px solid rgba(255,255,255,.16);
+        backdrop-filter: blur(14px);
+      }
+
+      .mobile-cta .btn {
+        min-height: 52px;
+        padding: 11px 8px;
+        font-size: 14px;
+      }
+
+      .mobile-cta .btn-outline {
+        border-color: rgba(255,255,255,.45);
+      }
+    }
+
+    @media (max-width: 390px) {
+      .experience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience {
+        min-height: 0;
+      }
+
+      .icon-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .icon-item {
+        min-height: 260px;
+      }
+
+      .mobile-cta .btn {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "OneFit Gym L.L.C.",
+    "url": "https://www.onefit.ae/",
+    "description": "A premium fitness and wellness gym offering gym access, group classes, recovery facilities and family fitness in Jumeirah Village Triangle, Dubai.",
+    "address": {
+      "@type": "PostalAddress",
+      "name": "The Ivy by Metrical",
+      "addressLocality": "Jumeirah Village Triangle",
+      "addressRegion": "Dubai",
+      "addressCountry": "AE"
+    },
+    "telephone": "+971529709087",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.0489324,
+      "longitude": 55.1951945
+    },
+    "sameAs": [
+      "https://www.onefit.ae/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="https://www.onefit.ae/" aria-label="OneFit home">
+        <span class="brand-mark">O</span>
+        <span>onefit<span class="accent">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+        <a href="https://www.onefit.ae/adult-classes">Adult Classes</a>
+        <a href="https://www.onefit.ae/kids-classes">Kids Classes</a>
+        <a href="https://www.onefit.ae/memberships">Memberships</a>
+        <a href="https://www.onefit.ae/about-us">Our Story</a>
+        <a href="https://www.onefit.ae/contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="https://www.onefit.ae/3day">
+          Claim Free Pass <span class="btn-arrow">↗</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO: clearer positioning and primary free-pass conversion -->
+
+    <section class="hero">
+      <div class="hero-image" aria-hidden="true">
+        <!-- Independent stock image placeholder. Replace with approved OneFit photography before production. -->
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2000&q=88"
+             alt="" fetchpriority="high">
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-kicker"><i></i> Jumeirah Village Triangle · Dubai</div>
+
+          <h1>
+            More than a gym.<br>
+            Your place to <span>move.</span>
+          </h1>
+
+          <p class="hero-copy">
+            Train, recover and connect at OneFit. Discover strength training,
+            group classes, Pilates, wellness and family fitness in one premium
+            fitness community in JVT.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="https://www.onefit.ae/3day">
+              Claim Your 3-Day Free Pass <span class="btn-arrow">↗</span>
+            </a>
+            <a class="btn btn-outline" href="https://www.onefit.ae/memberships">
+              Explore Memberships
+            </a>
+          </div>
+
+          <div class="hero-proof">
+            <span><i class="proof-dot"></i> No-commitment free pass</span>
+            <span><i class="proof-dot"></i> Training and recovery</span>
+            <span><i class="proof-dot"></i> Family-friendly fitness</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND POSITIONING -->
+
+    <section class="section statement">
+      <div class="container statement-inner">
+        <h2 class="reveal">
+          One space. More ways to
+          <span>feel stronger.</span>
+        </h2>
+
+        <div class="statement-aside reveal">
+          <p>
+            OneFit brings gym training, specialist classes, recovery and
+            family fitness together. Find the training experience that fits
+            your routine and make space for progress.
+          </p>
+          <a href="https://www.onefit.ae/about-us">
+            Discover the OneFit experience <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER PATHWAYS -->
+
+    <section class="section experiences" id="experiences">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="eyebrow">Find your way to move</span>
+          <h2>Different goals.<br><span class="accent">One community.</span></h2>
+          <p>
+            Explore the experiences available at OneFit, from focused gym
+            sessions to coached classes and family-friendly programmes.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience reveal">
+            <span class="experience-number">01 / STRENGTH</span>
+            <h3>Strength Training</h3>
+            <p>Build strength and confidence with gym training and structured sessions.</p>
+            <a href="https://www.onefit.ae/adult-classes">Explore classes ↗</a>
+          </article>
+
+          <article class="experience reveal">
+            <span class="experience-number">02 / CONDITIONING</span>
+            <h3>HIIT & Conditioning</h3>
+            <p>Explore energetic sessions designed around movement and endurance.</p>
+            <a href="https://www.onefit.ae/adult-classes">Explore classes ↗</a>
+          </article>
+
+          <article class="experience reveal">
+            <span class="experience-number">03 / COMBAT</span>
+            <h3>Boxing</h3>
+            <p>Discover boxing sessions that bring technique, coordination and cardio together.</p>
+            <a href="https://www.onefit.ae/adult-classes">Explore classes ↗</a>
+          </article>
+
+          <article class="experience reveal">
+            <span class="experience-number">04 / MOVEMENT</span>
+            <h3>Reformer Pilates</h3>
+            <p>Focus on controlled movement, stability and flexibility.</p>
+            <a href="https://www.onefit.ae/adult-classes">Explore classes ↗</a>
+          </article>
+
+          <article class="experience reveal">
+            <span class="experience-number">05 / BALANCE</span>
+            <h3>Yoga & Recovery</h3>
+            <p>Make room for mobility, recovery and a more balanced routine.</p>
+            <a href="https://www.onefit.ae/adult-classes">Explore classes ↗</a>
+          </article>
+
+          <article class="experience reveal">
+            <span class="experience-number">06 / FAMILY</span>
+            <h3>Kids & Juniors</h3>
+            <p>Coach-led sessions designed to introduce children to movement and fitness.</p>
+            <a href="https://www.onefit.ae/kids-classes">Explore kids classes ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXACTLY SIX CUSTOM SVG ICONS IN TWO ROWS OF THREE -->
+
+    <section class="section icon-section" id="training">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="eyebrow">The OneFit mix</span>
+          <h2>Make room for<br><span class="accent">every side of you.</span></h2>
+          <p>
+            A connected fitness experience with different ways to train,
+            move, recharge and enjoy being part of a community.
+          </p>
+        </div>
+
+        <div class="icon-grid">
+
+          <article class="icon-item reveal">
+            <div class="icon-art">
+              <svg viewBox="0 0 40 40" role="img" aria-label="Strength training icon">
+                <path d="M7 15v10M12 11v18M28 11v18M33 15v10M12 20h16"/>
+                <path d="M7 20H4M36 20h-3"/>
+              </svg>
+            </div>
+            <h3>Strength</h3>
+            <p>A gym environment for strength-focused training and consistent routines.</p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-art">
+              <svg viewBox="0 0 40 40" role="img" aria-label="Conditioning icon">
+                <path d="M21 4 9 22h9l-1 14 14-21h-9l-1-11Z"/>
+              </svg>
+            </div>
+            <h3>Conditioning</h3>
+            <p>Group sessions including HIIT, running and performance-focused formats.</p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-art">
+              <svg viewBox="0 0 40 40" role="img" aria-label="Boxing icon">
+                <path d="M12 22v-7a4 4 0 0 1 8 0v5"/>
+                <path d="M20 20v-3a4 4 0 0 1 8 0v7l-3 7H13l-4-7v-4a3 3 0 0 1 6 0v3"/>
+                <path d="M15 31h10"/>
+              </svg>
+            </div>
+            <h3>Boxing</h3>
+            <p>Boxing sessions that bring skill, focus and movement into your routine.</p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-art">
+              <svg viewBox="0 0 40 40" role="img" aria-label="Pilates movement icon">
+                <circle cx="20" cy="8" r="3"/>
+                <path d="M20 12v9l-8 7M20 20l9 7M12 28l-3 5M29 27l3 6"/>
+                <path d="M8 35h24"/>
+              </svg>
+            </div>
+            <h3>Reformer Pilates</h3>
+            <p>Controlled movement and mindful sessions focused on balance and mobility.</p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-art">
+              <svg viewBox="0 0 40 40" role="img" aria-label="Yoga and recovery icon">
+                <circle cx="20" cy="8" r="3"/>
+                <path d="M20 12v8M20 20l-9 8M20 20l9 8M11 28l-4 5M29 28l4 5"/>
+                <path d="M13 15c2 2 4 3 7 3s5-1 7-3"/>
+              </svg>
+            </div>
+            <h3>Yoga & Recovery</h3>
+            <p>Make space for yoga, sauna and recovery as part of the wider experience.</p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-art">
+              <svg viewBox="0 0 40 40" role="img" aria-label="Family fitness icon">
+                <circle cx="14" cy="12" r="4"/>
+                <circle cx="27" cy="14" r="3"/>
+                <path d="M6 32v-5a8 8 0 0 1 16 0v5M23 25a6 6 0 0 1 11 3v4"/>
+                <path d="M10 32h12M25 32h8"/>
+              </svg>
+            </div>
+            <h3>Kids & Family</h3>
+            <p>Dedicated kids and juniors sessions with structured, coach-led activities.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING + RECOVERY FEATURE -->
+
+    <section class="section feature">
+      <div class="container feature-layout">
+        <div class="feature-visual reveal">
+          <div class="feature-photo">
+            <!-- Independent stock image placeholder. Replace with approved OneFit photography before production. -->
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1100&q=85"
+                 alt="Fitness training session in a gym" loading="lazy">
+          </div>
+          <div class="feature-stamp">TRAIN<br>MOVE<br>RECOVER</div>
+        </div>
+
+        <div class="feature-copy reveal">
+          <span class="eyebrow">A more complete routine</span>
+          <h2>Training is one part of the <span class="accent">experience.</span></h2>
+          <p>
+            OneFit combines gym access and group classes with recovery
+            facilities and community experiences, giving members more ways
+            to shape their time at the club.
+          </p>
+
+          <ul class="feature-points">
+            <li><span class="check">✓</span><span>Full gym access and a range of training formats.</span></li>
+            <li><span class="check">✓</span><span>Classes including yoga, boxing, HIIT, strength and Pilates.</span></li>
+            <li><span class="check">✓</span><span>Sauna and recovery access included in listed full memberships.</span></li>
+            <li><span class="check">✓</span><span>App access, community events and valet parking on listed full memberships.</span></li>
+          </ul>
+
+          <a class="btn" href="https://www.onefit.ae/memberships">
+            See Membership Benefits <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERSHIP: clearer price discovery -->
+
+    <section class="section membership" id="memberships">
+      <div class="container">
+        <div class="membership-head">
+          <div class="section-intro reveal">
+            <span class="eyebrow">Find your membership</span>
+            <h2>Choose your way<br>to <span class="accent">OneFit.</span></h2>
+            <p>
+              Compare the published adult membership options and choose
+              the commitment that works for your routine.
+            </p>
+          </div>
+
+          <a class="btn btn-outline reveal" href="https://www.onefit.ae/memberships">
+            View All Memberships ↗
+          </a>
+        </div>
+
+        <div class="membership-grid">
+          <article class="price-card reveal">
+            <span class="price-label">Starter</span>
+            <h3>1 Month</h3>
+            <div class="price">AED 1,050</div>
+            <p>Full gym access, classes and listed membership benefits.</p>
+            <a class="btn" href="https://www.onefit.ae/memberships">View Plan ↗</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <span class="price-label">Popular · 6 Months</span>
+            <h3>6-Month Membership</h3>
+            <div class="price">AED 3,600</div>
+            <p>A longer membership for building a consistent training routine.</p>
+            <a class="btn" href="https://www.onefit.ae/memberships">View Plan ↗</a>
+          </article>
+
+          <article class="price-card reveal">
+            <span class="price-label">Best Value · 12 Months</span>
+            <h3>12-Month Membership</h3>
+            <div class="price">AED 6,600</div>
+            <p>Full gym access and the listed OneFit membership benefits.</p>
+            <a class="btn" href="https://www.onefit.ae/memberships">View Plan ↗</a>
+          </article>
+        </div>
+
+        <p class="price-note">
+          Also listed by OneFit: a 3-month plan at AED 1,950, a 12-month
+          monthly-payment option at AED 695/month, and a kids plan at
+          AED 449/month. Prices and inclusions should be confirmed on the
+          <a href="https://www.onefit.ae/memberships">official membership page</a>
+          before purchase.
+        </p>
+      </div>
+    </section>
+
+    <!-- FREE PASS CONVERSION -->
+
+    <section class="section trial" id="free-pass">
+      <div class="container">
+        <div class="trial-panel">
+          <div class="trial-copy reveal">
+            <span class="eyebrow">Start with a visit</span>
+            <h2>Three days to experience <span class="accent">OneFit.</span></h2>
+            <p>
+              Explore the gym, discover the classes and experience the
+              environment before deciding on a membership. OneFit's
+              published pass is free and comes with no membership commitment.
+            </p>
+            <a class="btn" href="https://www.onefit.ae/3day">
+              Claim Your Free Pass <span class="btn-arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="trial-visual">
+            <!-- Independent stock image placeholder. Replace with approved OneFit photography before production. -->
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=85"
+                 alt="Athlete training in a fitness environment" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF: only published OneFit review statements -->
+
+    <section class="section community">
+      <div class="container community-layout">
+        <div class="reveal">
+          <span class="eyebrow">The OneFit community</span>
+          <h2>More than a place to train.</h2>
+          <p>
+            OneFit brings people together through training, recovery and
+            shared experiences. Explore the club and find the routine
+            that works for you.
+          </p>
+          <a class="btn" href="https://www.onefit.ae/about-us">
+            Get to Know OneFit ↗
+          </a>
+        </div>
+
+        <div class="reveal">
+          <div class="rating-block">
+            <div class="rating-number">4.9</div>
+            <div class="rating-stars" aria-label="Five stars">★★★★★</div>
+            <p>Community rating displayed on the official OneFit website.</p>
+          </div>
+
+          <div class="review-quotes">
+            <div class="review-quote">
+              <p>“Classes, recovery, and premium equipment all come together in one spacious, clean club.”</p>
+              <strong>Mohamed Zidan · Published OneFit testimonial</strong>
+            </div>
+            <div class="review-quote">
+              <p>“The atmosphere is welcoming, the team is helpful, and every visit feels motivating.”</p>
+              <strong>Zee. Qeshk · Published OneFit testimonial</strong>
+            </div>
+            <div class="review-quote">
+              <p>“Reformer, spin, and yoga sessions helped members fall back in love with training.”</p>
+              <strong>Barnie Otabaeva · Published OneFit testimonial</strong>
+            </div>
+          </div>
+
+          <p class="review-note">
+            Testimonials and rating are reproduced from the official website.
+            Visit OneFit's website for the latest review information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION AND CONTACT -->
+
+    <section class="section location" id="visit">
+      <div class="container location-layout">
+        <div class="location-copy reveal">
+          <span class="eyebrow">Find your club</span>
+          <h2>Your next session starts in <span class="accent">JVT.</span></h2>
+          <p>
+            Visit OneFit at The Ivy by Metrical in Jumeirah Village Triangle,
+            Dubai. Contact the team to arrange your visit or ask about the
+            free pass.
+          </p>
+
+          <div class="location-detail">
+            <div>
+              <strong>Location</strong>
+              <span>The Ivy by Metrical, Jumeirah Village Triangle, Dubai, UAE</span>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div>
+              <strong>WhatsApp</strong>
+              <span>Speak to the OneFit team and arrange your visit.</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn" href="https://www.onefit.ae/contact">Contact OneFit ↗</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=OneFit+Gym+The+Ivy+by+Metrical+Dubai">Get Directions ↗</a>
+          </div>
+        </div>
+
+        <div class="location-map reveal">
+          <iframe
+            title="Map showing OneFit Gym in Jumeirah Village Triangle, Dubai"
+            src="https://www.google.com/maps?q=25.0489324,55.1951945&z=15&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="https://www.onefit.ae/">
+            <span class="brand-mark">O</span>
+            <span>onefit<span class="accent">.</span></span>
+          </a>
+          <p>
+            A premium fitness community built around training, recovery,
+            family fitness and connection in Jumeirah Village Triangle, Dubai.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="https://www.onefit.ae/adult-classes">Adult Classes</a>
+            <a href="https://www.onefit.ae/kids-classes">Kids Classes</a>
+            <a href="https://www.onefit.ae/memberships">Memberships</a>
+            <a href="https://www.onefit.ae/events">Events</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>OneFit</h3>
+          <div class="footer-links">
+            <a href="https://www.onefit.ae/about-us">About Us</a>
+            <a href="https://www.onefit.ae/3day">Free Pass</a>
+            <a href="https://www.onefit.ae/contact">Contact</a>
+            <a href="https://www.onefit.ae/termsandcondition">Terms & Conditions</a>
+            <a href="https://www.onefit.ae/privacy-policy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> OneFit. All rights reserved.</span>
+        <span>Jumeirah Village Triangle, Dubai, UAE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Exactly two persistent mobile conversion buttons -->
+
+  <div class="mobile-cta" aria-label="Quick actions">
+    <a class="btn" href="https://www.onefit.ae/3day">Claim Free Pass</a>
+    <a class="btn btn-outline" href="https://wa.me/971529709087?text=I%20am%20interested%20in%20joining%20OneFit">WhatsApp Us</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    function closeMenu() {
+      mainNav.classList.remove("open");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+      document.body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    // Reveal sections as they enter the viewport
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach(element => revealObserver.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add("is-visible"));
+    }
+
+    // Current year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
